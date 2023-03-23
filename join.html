@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mike Downs">
+    <meta name="description" content="A home Page for Rexburg CHamber of Commerce.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="images/icon.ico">
+    <link rel="stylesheet" href="css/chamber.css">
+    <title>Rexburg Chamber of Commerce-Join</title>
+</head>
+
+<body>
+    <h3 class="announce"> </h3>
+    <header>
+        <a href='index.html' class="logo_link"><img class="logo" src="images/chamber_logo_changed.webp" alt="Rexburg Chamber Logo"></a>
+
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="social_media_logos"><a href="https://facebook.com" target="_blank"><img class="facebook"
+                    src='images/f_logo_RGB-White_100.png' alt="facebook Logo"></a>
+            <a href="https://linkedin.com" target="_blank"><img class="linkedin" src='images/In-White-26@2x.png'
+                    alt="Linked In Logo"></a></div>
+
+        <span class="date"></span>
+    </header>
+
+    <main class="join_main">
+        <div class="join_pic_box">
+            <h1>Join our Group!</h1>
+            <p>Fill out the form on this page if you want to join our group!</p>
+            <h2>Bronze Membership</h2>
+           <p> 15% discount on events</p> <p> 10% discount on advertising</p><p> Fee of $50/month</p>
+            <h2>Silver Membership</h2>
+            <p> 25% discount on events</p> <p> 15% discount on advertising</p><p> Free participation in the trade fair</p><p>Fee of $100/month</p>
+            <h2>Gold Membership</h2>
+            <p> 50% discount on events</p> <p> 50% discount on events</p><p> Free participation in the trade fair</p>
+            <p>5 free featured ads per year</p><p>1 free training per quarter</p><p>Fee of $250/month</p>
+        </div>
+
+
+        <div class="form_section">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Join Form</legend>
+                    <label for="fname">First Name*<input id="fname" name="firstname" required></label>
+
+                    <label for="lname">Last Name*<input id="lname" name="lastname" required></label>
+
+                    <label for="email">Email*<input id="email" name="email" type="email"
+                            placeholder="example@gmail.com" required></label>
+
+
+                    <label for="phone">Phone Number<input id="phone" type="tel" name="phone"
+                            placeholder="12345555555"></label>
+
+
+                    <label for="bus_name">Business Name*<input id="bus_name" type="text" name="bus_name"
+                            required></label>
+
+                    <label for="title">Position/Title*
+                        <input id="title" name="title" pattern='[- A-Za-z]+' minlength='7'></label>
+
+
+                    <!--HIDDEN DROP DOWN OPTIONS-->
+                    <label>Member Level
+                        <select name="subject">
+                            <option value="">Please Select</option>
+                            <option value="level1">Level 1</option>
+                            <option value="level2">Level 2</option>
+                            <option value="level3">Level 3</option>
+                        </select>
+                    </label>
+
+                    <!--HIDDEN TEXT AREA-->
+                    <input id='hidden' type="hidden" value="" name="hidden">
+
+                    <label for="message">Message:
+                        <textarea id="message" name="message"></textarea></label>
+
+                    <!--SUBMIT BUTTON-->
+
+                    <input class='submit' type="submit" value="Send Message">
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <img class="logo_footer" src="images/chamber_logo_changed.webp" alt="Rexburg Chamber Logo">
+
+        <p class='legel-section'>
+            &copy;<span id="year"></span> Rexburg Chamber | Mike Downs | WDD 230 Project | <span
+                id='current_date'></span>
+
+        </p>
+        <a class="address" href="https://goo.gl/maps/tPYNnkvYH77Nfko79">
+            <p class="map">Rexburg Chamber Address📍</p>
+        </a>
+    </footer>
+    <script src="js/chamber.js"></script>
+</body>
+
+</html>
